@@ -1,0 +1,34 @@
+.container-offers {
+  &__card {
+    width: 368px;
+    height: 368px;
+    margin-left: 20px;
+    margin-top: 40px;
+
+    img {
+      width: 368px;
+      height: 248px;
+      border-radius: 8px;
+    }
+
+    &-post {
+      h4 {
+        font-weight: 900;
+        font-size: 18px;
+      }
+
+      p {
+        margin-top: 10px;
+        font-size: 15px;
+      }
+    }
+
+    &-title-and-price {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

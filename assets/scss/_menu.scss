@@ -1,0 +1,16 @@
+.menu {
+    display: flex;
+    font-size: 14px;
+
+    a {
+        padding: 1.5rem;
+        font-weight: 800;
+        color: $graydark;
+        text-decoration: none;
+
+        i {
+            color: $graydark;
+            margin-right: 0.4rem;
+        }
+    }
+}
