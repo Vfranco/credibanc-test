@@ -1,0 +1,14 @@
+<div class="container-offers__card">
+  <div class="image">
+    <img
+      [src]="product.images[0]"
+    />
+  </div>
+  <div class="container-offers__card-post">
+    <div class="container-offers__card-title-and-price">
+      <h4>{{product.title}}</h4>
+      <h3>{{product.price | currency}}</h3>
+    </div>
+    <p>{{product.description}}</p>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container__card">
+  <div>
+    <img
+      [src]="card.images[0]"
+    />
+  </div>
+  <div class="container__card-title">
+    <h5>{{card.title}}</h5>
+  </div>
+  <div class="container__card-price">
+    <span>{{card.price | currency}}</span>
+    <span>$529.95</span>
+  </div>
+  <div class="container__card-btn" (click)="onSelectedProduct(card)">
+    <p>Add to cart</p>
+  </div>
+</div>

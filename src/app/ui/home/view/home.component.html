@@ -1,0 +1,22 @@
+<div class="carrousel">
+  <ng-container *ngFor="let product of products">
+    <app-last-offers [product]="product"></app-last-offers>
+  </ng-container>
+</div>
+<div class="pagination">
+  <button (click)="prevPageAction()" [disabled]="offset === 0">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <button (click)="nextPageAction()">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+</div>
+<div class="titleOne">
+  <h1>Nuestros Productos</h1>
+</div>
+<div class="cards">
+  <ng-container *ngFor="let card of listCards">
+    <app-card [card]="card" (selectedProduct)="selectProductAction($event)"></app-card>
+  </ng-container>
+</div>
+<app-footer></app-footer>
